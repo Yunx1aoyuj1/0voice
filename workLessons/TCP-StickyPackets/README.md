@@ -9,3 +9,4 @@ TCP和UDP收发数据的差异：
 理论上大概就是这样了，但是坑不止在于他没做，还需要做成配置项，按项目直接修改配置数据解析不同的headdata.
 
 验证完放一点代码段进行说明吧，留个纪念~
+https://www.zhihu.com/column/easyserverdev
