@@ -66,6 +66,9 @@ int main(int argc, char* argv[])
 
     while (1)
     {
+        rset = rfds;
+        //检查的文件描述符大小，可读时间，可写事件，错误事件，阻塞时间
+        int nready = select(maxfd+1, &rset, NULL, NULL, NULL);
         
     }
     
