@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
     serverAddr.sin_port = htons(port);
     bind(sockfd, (struct sockaddr*)&serverAddr, sizeof(serverAddr));
 
-    listen(sockfd, 20);
+    listen(sockfd, 20);     //第二个参数的含义,backlog：指定链接队列的最大长度，即在accept之前能够等待连接的最大数量。
 
     errlog<<"listen port:"<<port<<std::endl;
 
@@ -88,7 +88,7 @@ int main(int argc, char* argv[])
                     else if(len == 0)
                     {
                         errlog<<"close clientfd:"<<clientfd<<std::endl;
-                        epoll_ctl(epfd, EPOLL_CTL_DEL, clientfd, &ev);
+                        epoll_ctl(epfd, EPOLL_CTL_DEL, clientfd, NULL);
                         close(clientfd);
 
                         continue;

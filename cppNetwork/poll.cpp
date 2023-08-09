@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
 
     while (1)
     {
-        int nready = poll(fds, maxfd+1, -1);    //第三个参数的作用？
+        int nready = poll(fds, maxfd+1, -1); 
         if (fds[sockfd].revents & POLLIN)
         {
             int clientfd = accept(sockfd, (struct sockaddr*)&clientAddr, &clientlen);
