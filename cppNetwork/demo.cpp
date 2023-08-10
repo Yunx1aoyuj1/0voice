@@ -11,9 +11,16 @@
 
 using namespace std;
 
+#define     BUFFER_LENGTH           1024
+#define     EVENTS_LENGTH           1024
 
 int main(int argc, char* argv[])
 {
+    if(argc < 2)
+        return -1;
+    int port = atoi(argv[1]);
 
+    
+    
     return 0;
 }
