@@ -1,4 +1,4 @@
-interface.h             #一些可以复用的基础组件，慢慢补充
+interface.h            #一些可以复用的基础组件，慢慢补充
 
 
 
@@ -41,4 +41,4 @@ reactor.cpp             #基于epoll的端口复用reactor框架
 
 
 协程：用同步的编程方式，实现异步的性能。
-        
+        使用NtyCo协程框架
