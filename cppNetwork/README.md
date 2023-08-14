@@ -55,5 +55,13 @@
 
         使用NtyCo协程框架
             链接：https://github.com/wangbojing/NtyCo
-            nty_client.cpp
-            nty_server.cpp
+            NtyCo/sample/nty_client.cpp
+            NtyCo/sample/nty_server.cpp
+
+            服务器测试截图：
+
+![Alt text](nty_server.png)
+
+
+
+
