@@ -1,8 +1,7 @@
-#include <iostream>
 #include <arpa/inet.h>
-#include "./NtyCo/nty_coroutine.h"
-#include "interface.h"
+#include "nty_coroutine.h"
 
+#define     errlog      std::cout<<"line: "<<__LINE__<<" "
 
 #define NTY_SERVER_IPADDR		"127.0.0.1"
 #define NTY_SERVER_PORT			9096
