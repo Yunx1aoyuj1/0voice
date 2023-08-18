@@ -73,3 +73,21 @@
 
 完事~
 去写下一个BUG。
+
+
+补充：
+1、手动解析了一下OBS发给TLS数据包中的GPS数据，发现有小数点，所以不能用上述第二个解决方案，有个更简洁的：
+
+    //直接使用抛异常
+    ods_double64 lat = 0;
+    
+    try 
+    {
+        lat = boost::lexical_cast<ods_double64>(stringStreamLat.str());
+    }
+    catch (const boost::bad_lexical_cast& e) 
+    {
+        flagLa = 'N';
+    }
+
+结束.
