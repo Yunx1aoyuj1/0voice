@@ -67,4 +67,8 @@
     
     5、测试、应用
         include thread_pool.h & link libthread_pool.so
+        main.c
+        编译：gcc -Wl,-rpath=./ main.c -o main -I./ -L./ -lthread_pool -lpthread
+
+![Alt text](image.png)
 
